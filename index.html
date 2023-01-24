@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timed JavaScript Quiz</title>
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+<div class="start-ctn" style="display: block">
+    <div class="start-page">
+        <h1 id="h1-1">JavaScript Coding Quiz</h1>
+        <p>Welcome to the JavaScript Coding Quiz! In this quiz you will answer a series of questions while being timed.
+            Make sure to answer as many questions as you can correctly and submit your highscore! </p>
+            <button id="start-btn">Begin Quiz</button>
+    </div>
+</div>
+
+<div class="quiz-ctn" style="display: none;">
+    <div class="quiz-page">
+        <div class="quiz-timer">60</div>
+        <div class="quiz-questions">Question 1</div>
+            <button id="a" class="quiz-answers"></button>
+            <button id="b" class="quiz-answers"></button>
+            <button id="c" class="quiz-answers"></button>
+            <button id="d" class="quiz-answers"></button>         
+        <div class="quiz-result"></div>
+    </div>
+</div>
+
+
+<div class="result-ctn" style="display: none;">
+    <div class="results-page">
+        <div id="high-score"></div>
+        <input id="input-name" type="text" placeholder="  Enter your name here!">
+        <button class="name-btn">Submit</button>
+    </div>    
+</div>
+
+<div class="score-ctn" style="display: none;">
+    <div class="score-page">
+        <div class="score-board">
+            <div class="scoreBoard" id="scoreName">Name</div>
+            <div class="scoreBoard" id="scoreScore">Score</div>
+        </div>    
+        <div class="score-result">
+            <div id="score-name"></div>
+            <div id="score-score"></div>
+        </div>    
+        <button id="retry-btn">Retry!</button>
+    </div>
+</div>
+
+
+
+<script src="./assets/script.js"></script>    
+</body>
+</html>
