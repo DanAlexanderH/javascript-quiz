@@ -20,9 +20,12 @@ This website hosts a quiz that can test novice web developers on their knowledge
 ## Installation
 <br>
 
+https://danalexanderh.github.io/javascript-quiz/
 
 <br>
 
 ## Usage
 Beginner programmers can use this quiz to brush up on their coding knowledge by selecting the correct answers to the question and in return, will get a highscore.
 <br><br><br>
+
+![alt text](./assets/images/javascript.png)
