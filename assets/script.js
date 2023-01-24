@@ -20,6 +20,41 @@ let scoreScore = document.querySelector("#scoreScore");
 let finalName = document.querySelector("#score-name");
 let finalScore = document.querySelector("#score-score");
 let retryBtn = document.querySelector("#retry-btn");
+let currentQuestion = 0;
+
+let questionList = [{
+    question: "What does HTML stand for?",
+    a: "Hot Tamale Mama Lorenzo",
+    b: "Hyper Text Markup Language",
+    c: "Home Tool Manage Log",
+    d: "Homebrew Text Manage Language",
+    answer: "b"
+},
+{
+    question: "What programming language helps users style their web page?",
+    a: "CSS",
+    b: "HTML",
+    c: "JavaScript",
+    d: "Chrome",
+    answer: "a"
+},
+{
+    question: "Which one of these isn't a data type?",
+    a: "String",
+    b: "Boolean",
+    c: "Number",
+    d: "Function",
+    answer: "d"
+},
+{
+    question: "Which one of these is a non senmantic element?",
+    a: "<div>",
+    b: "<p>",
+    c: "<article>",
+    d: "<footer>",
+    answer: "a"
+
+}];
 
 
  function quizStart() {
@@ -55,8 +90,6 @@ function resultPage() {
 
     quizScore.innerHTML = "Final score: " + score + " out of " + questionList.length;
 };
-
-let currentQuestion = 0;
 
 function generateQuestions() {
     quizQuestions.textContent = questionList[currentQuestion].question;
@@ -101,40 +134,6 @@ function startOver() {
     quizStart();
 };
 
-
-let questionList = [{
-    question: "What does HTML stand for?",
-    a: "Hot Tamale Mama Lorenzo",
-    b: "Hyper Text Markup Language",
-    c: "Home Tool Manage Log",
-    d: "Homebrew Text Manage Language",
-    answer: "b"
-},
-{
-    question: "What programming language helps users style their web page?",
-    a: "CSS",
-    b: "HTML",
-    c: "JavaScript",
-    d: "Chrome",
-    answer: "a"
-},
-{
-    question: "Which one of these isn't a data type?",
-    a: "String",
-    b: "Boolean",
-    c: "Number",
-    d: "Function",
-    answer: "d"
-},
-{
-    question: "Which one of these is a non senmantic element?",
-    a: "<div>",
-    b: "<p>",
-    c: "<article>",
-    d: "<footer>",
-    answer: "a"
-
-}];
 
 startBtn.addEventListener("click", quizStart);
 a.addEventListener("click", checkAnswer);
